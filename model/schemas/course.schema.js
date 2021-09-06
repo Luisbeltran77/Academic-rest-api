@@ -1,0 +1,20 @@
+/** packages */
+const mongoose = require("mongoose");
+
+/** Schema creation */
+
+const courseSchema = mongoose.Schema({
+    code:{
+        type: "String",
+        required: true,
+    },
+    name:{
+        type: "String",
+        required: true,
+       
+    }
+});
+
+/** Schema exportation */
+
+module.exports = courseSchema;
